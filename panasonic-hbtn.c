@@ -65,7 +65,7 @@ static struct acpi_driver acpi_pcc_driver = {
     .ids =        pcc_device_ids,
     .ops =        {
                 .add =       acpi_pcc_hbtn_add,
-                .remove =    acpi_pcc_hbtn_remove,
+ // terrible 6.2 =< fix               .remove =    acpi_pcc_hbtn_remove,
                 .notify =    acpi_pcc_hbtn_notify,
             },
 };
